@@ -1,0 +1,11 @@
+{
+  "deploy": [
+    "shell:git-is-clean",
+    "shell:git-checkout-master",
+    "build",
+    "shell:git-push-master",
+    "shell:deploy-prepare",
+    "build",
+    "shell:deploy-publish"
+  ]
+}
